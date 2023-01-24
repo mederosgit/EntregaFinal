@@ -14,6 +14,11 @@ body{
     background-position: center
 }
 
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 
 // index..........................................
@@ -26,28 +31,36 @@ body{
 
     // operadores de + , - , * , / ..........
     .foto-index-1{
-        width: calc(100px * 3);
+        width: calc(300px * 2);
         height: calc(600px / 2);
         margin-bottom: calc(40px - 10px);
         border-radius: calc(25px + 25px);
         border: solid 7px rgb(155, 155, 155);
         box-shadow: 15px 15px 20px rgb(0, 0, 0);
-        // animation: escalar-imagen 2s ease-in-out infinite alternate;
+        animation: escalar-imagen 2s ease-in-out infinite alternate;
         
-        // @keyframes escalar-imagen {
-        //     from {transform: scale(1);}
-        //     to {transform: scale(1.05);}
-        //   }
+        @keyframes escalar-imagen {
+            from {transform: scale(1);}
+             to {transform: scale(1.05);}
+        }
 
         // // Pseudoclase
-        // &:hover {
-        //     filter: saturate(300%);
-        //     border: 10px solid red;
-        // }
+         &:hover {
+           filter: saturate(300%);
+            border: 10px solid red;
+        }
 
     }
 
     .foto-index-2{
+        @extend .foto-index-1;
+    }
+
+    .foto-index-3{
+        @extend .foto-index-1;
+    }
+
+    .foto-index-4{
         @extend .foto-index-1;
     }
 
@@ -61,13 +74,13 @@ body{
     h2{
         margin-bottom: 180px;
         text-align: center;
-        color: c.$color-h2;
+        color: c.$color-titulos;
     }
 
     h3{
         text-align: center;
         color: c.$color-h3;
-        margin-bottom: 20px;
+        
     }
 
     h4{
@@ -82,11 +95,6 @@ body{
 }
 
 // socios..........................................
-
-.main-socios{
-    width: 100%;
-}
-
 .contenedor-titulo-socios{
     text-align: center;
     text-shadow: 15px 15px 15px rgb(0, 0, 0);
@@ -122,7 +130,6 @@ body{
 }
 
 // catalogo.....................................
-
 .titulo-catalogo{
     color: c.$color-titulos;
     text-align: center;
@@ -175,18 +182,12 @@ body{
 }
 
 // productos..........................................
-
-#main-productos{
-    padding-bottom: 10px;
-    margin-left: 10px;
-
-    .subtitulo-productos{
-        color: c.$color-titulos;
-        margin-bottom: 50px;
-        text-align: center;
-        text-shadow: 15px 15px 20px rgb(0, 0, 0);
-    }
-} 
+.subtitulo-productos{
+    color: c.$color-titulos;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
 
 #container-productos-1{
     margin-bottom: 150px;
@@ -307,10 +308,6 @@ body{
     }
 
     /* media de productos */
-    table{
-        margin-left: 20px;
-    }
-
     .parrafo-productos{
         text-align: center;
         font-size: c.$font-size-redes;
