@@ -1,0 +1,33 @@
+@use '_commons' as c;
+
+// header.....................................
+
+header{
+    
+}
+
+.contendor_logo{
+    background-color: aliceblue;
+}
+
+.logo{
+    width: 270px;
+}
+
+.contenedor_logo{
+    box-shadow: 5px 5px 10px black;
+    background-color: c.$background-logo;
+    margin-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: c.$background-nav;
+    padding-block: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+

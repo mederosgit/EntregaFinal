@@ -1,0 +1,352 @@
+@use '_commons' as c;
+
+
+*{  
+    margin: 0; 
+    padding: 0;
+}
+
+body{ 
+    width: 100%;
+    background: c.$background;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+
+
+// index..........................................
+
+.contenedor-foto-index{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 15px;
+
+    // operadores de + , - , * , / ..........
+    .foto-index-1{
+        width: calc(100px * 3);
+        height: calc(600px / 2);
+        margin-bottom: calc(40px - 10px);
+        border-radius: calc(25px + 25px);
+        border: solid 7px rgb(155, 155, 155);
+        box-shadow: 15px 15px 20px rgb(0, 0, 0);
+        // animation: escalar-imagen 2s ease-in-out infinite alternate;
+        
+        // @keyframes escalar-imagen {
+        //     from {transform: scale(1);}
+        //     to {transform: scale(1.05);}
+        //   }
+
+        // // Pseudoclase
+        // &:hover {
+        //     filter: saturate(300%);
+        //     border: 10px solid red;
+        // }
+
+    }
+
+    .foto-index-2{
+        @extend .foto-index-1;
+    }
+
+   
+    h1{
+        text-align: center;
+        color: c.$color-titulos;
+        margin-bottom: 40px;
+    }
+
+    h2{
+        margin-bottom: 180px;
+        text-align: center;
+        color: c.$color-h2;
+    }
+
+    h3{
+        text-align: center;
+        color: c.$color-h3;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        margin-bottom: 200px;
+        text-align: center;
+        color: c.$color-h4;
+    }
+}
+
+.footer-index{
+    margin-bottom: 20px;
+}
+
+// socios..........................................
+
+.main-socios{
+    width: 100%;
+}
+
+.contenedor-titulo-socios{
+    text-align: center;
+    text-shadow: 15px 15px 15px rgb(0, 0, 0);
+   
+    .titulo-socios{
+        margin-top: 10px;
+        font-size: 30px;
+        color: c.$color_titulos;
+    }
+    
+    .subtitulo-socios{
+        font-size: 30px;
+        color: c.$color-titulos;
+        margin-bottom: 50px;
+    }
+}
+
+// Pseudoclase
+.form-control:focus {
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+    color: white;
+    border: 4px solid c.$border-socios;
+    background-color: #8e4c00;
+}
+
+.form{
+    margin-left: 15px;
+    box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+
+.footer-socios{
+    margin-top: 62px;
+}
+
+// catalogo.....................................
+
+.titulo-catalogo{
+    color: c.$color-titulos;
+    text-align: center;
+    text-shadow: 15px 5px 15px rgb(0, 0, 0);
+}
+
+.subtitulo-catalogo{
+    @extend .titulo-catalogo;
+    margin-top: 60px;
+}
+
+.container-catalogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+    
+
+    .carousel{
+        box-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+
+    .titulo-video-catalogo{
+        margin-top: 70px;
+        color: c.$color-titulos;
+        text-align: center;
+        text-shadow: 15px 5px 15px rgb(0, 0, 0);
+    }
+
+    .video-catalogo{
+        margin-bottom: 85px;
+        box-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+
+    .parrafo-video-catalogo{
+        color: c.$color-titulos;
+        text-align: center;
+        text-shadow: 15px 5px 15px rgb(0, 0, 0);
+    }
+}
+
+.img-catalogo{
+    width: 300px;
+    height: 300px;
+}
+
+.footer-catalogo{
+    margin-top: 368px;
+}
+
+// productos..........................................
+
+#main-productos{
+    padding-bottom: 10px;
+    margin-left: 10px;
+
+    .subtitulo-productos{
+        color: c.$color-titulos;
+        margin-bottom: 50px;
+        text-align: center;
+        text-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+} 
+
+#container-productos-1{
+    margin-bottom: 150px;
+    box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+
+.footer-productos{
+    margin-top: 258px;
+}
+
+// video.............................................
+
+.videos{
+    display: flex;
+    display: block;
+    flex-wrap: wrap;
+    margin: 30px;
+
+    .titulo-video-1{
+        color: c.$color-titulos;
+        text-align: center;
+        text-shadow: 5px 5px 20px rgb(0, 0, 0);
+    }
+
+    .subtitulo-video-1{
+        @extend .titulo-video-1;
+        margin-bottom: 30px;
+    }
+
+    .parrafo-video{
+        @extend .titulo-video-1;
+    }
+
+    .videos-1{
+        margin-bottom: 20px;
+        box-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+
+    .titulo-video-2{
+        margin-top: 50px;
+        color: c.$color-titulos;
+        text-align: center;
+        text-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+
+    .videos-2{
+        margin-bottom: 100px;
+        box-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+}
+
+.footer-video{
+    margin-top: 287px;
+}
+
+// media Desktop.................................................
+
+
+@media only screen and (min-width: 1000px) {
+
+    
+    
+    /* media de index */
+    
+    .contenedor-foto-index{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        // mixin.............................................
+        @mixin fotos-principales($h, $w) {
+            height: $h;
+            width: $w;
+            margin-bottom: 100px;
+            box-shadow: 15px 15px 20px rgb(0, 0, 0);
+        }
+        
+        .foto-index-1{
+            @include fotos-principales(475px, 500px);
+        }
+
+        .foto-index-2{
+            @include fotos-principales(475px, 500px);
+        }
+    }
+
+    .footer-index{
+        margin-top: 70px;
+    }
+
+    
+    /* media de catalogo */
+    .img-catalogo, .titulo-video-catalogo, .video-catalogo{
+        display: none;
+    }
+
+    .titulo-catalogo{
+        text-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+
+    .footer-catalogo{
+        margin-top: 282px;
+    }
+
+    /* media de socios */
+    .subtitulo-socios{
+        margin-bottom: 50px;
+        font-size: 40px;
+    }
+
+    .form{
+        margin-left: 100px;
+    }
+
+    .footer-socios{
+        margin-bottom: 25px;
+    }
+
+    /* media de productos */
+    table{
+        margin-left: 20px;
+    }
+
+    .parrafo-productos{
+        text-align: center;
+        font-size: c.$font-size-redes;
+        color: c.$color-h2;
+    }
+    
+    .footer-productos{
+        margin-top:336px;
+    }
+
+    /* media de videos */
+    .titulo-video{
+        font-size: 50px;
+        text-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+
+    .videos-1{
+        margin-left: 50px;
+        margin-bottom: 100px;
+        height: 650px;
+    }
+
+    .titulo-video-2{
+        font-size: 30px;
+        text-shadow: 15px 15px 20px rgb(0, 0, 0);;
+    }
+    .videos-2{
+        margin-left: 50px;
+        margin-bottom: 100px;
+        height: 650px;;
+    }
+
+    .footer-video{
+        margin-top: 417px;
+    }
+
+    
+    
+}
