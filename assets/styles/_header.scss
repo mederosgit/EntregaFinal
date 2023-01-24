@@ -5,6 +5,7 @@
 header{
     margin-bottom: 20px;
 }
+
 .contenedor_logo{
     margin-bottom: 5px;
     background: c.$background_logo;
@@ -13,13 +14,32 @@ header{
 
 .logo{
     width: 370px;
+    height: 250px;
 }
 
 .contenedor_nav{
-    display: flex;
-    justify-content: flex-end;
     box-shadow: 5px 5px 10px black;
     background: c.$background-nav;
+    margin-bottom: 5px;
 }
 
+li, a{
+    font-weight: 1000;
+}
 
+.navbar a {
+    color: c.$color-enlaces;
+}
+
+.navbar a:hover {
+    color: rgb(0, 0, 255);
+}
+
+.titulo{
+    color: c.$color_tituloprincipal;
+    font-size: c.$font-size-titulo;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(to left, black, white 50%, black);
+    box-shadow: 5px 5px 10px black;
+}

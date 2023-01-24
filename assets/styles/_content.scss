@@ -29,9 +29,13 @@ main{
     flex-wrap: wrap;
     gap: 15px;
 
+    .degradados{
+        margin-bottom: 50px;
+    }
+
     // operadores de + , - , * , / ..........
     .foto-index-1{
-        width: calc(300px * 2);
+        width: calc(160px * 2);
         height: calc(600px / 2);
         margin-bottom: calc(40px - 10px);
         border-radius: calc(25px + 25px);
@@ -60,11 +64,10 @@ main{
         @extend .foto-index-1;
     }
 
-    .foto-index-4{
-        @extend .foto-index-1;
+    .text_img{
+        margin-bottom: 10px;
     }
 
-   
     h1{
         text-align: center;
         color: c.$color-titulos;
@@ -72,15 +75,14 @@ main{
     }
 
     h2{
-        margin-bottom: 180px;
         text-align: center;
-        color: c.$color-titulos;
+        color: c.$color-h2;
     }
 
     h3{
         text-align: center;
         color: c.$color-h3;
-        
+        margin-bottom: 150px;
     }
 
     h4{
@@ -248,7 +250,10 @@ main{
 
 @media only screen and (min-width: 1000px) {
 
-    
+    .contenedor_nav{
+        display: flex;
+        justify-content: flex-end;
+    }
     
     /* media de index */
     
@@ -327,6 +332,7 @@ main{
     .videos-1{
         margin-left: 50px;
         margin-bottom: 100px;
+        width: 95%;
         height: 650px;
     }
 
@@ -337,6 +343,7 @@ main{
     .videos-2{
         margin-left: 50px;
         margin-bottom: 100px;
+        width: 95%;
         height: 650px;;
     }
 

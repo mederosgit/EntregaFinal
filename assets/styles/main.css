@@ -22,8 +22,11 @@ main {
   flex-wrap: wrap;
   gap: 15px;
 }
-.contenedor-foto-index .foto-index-1, .contenedor-foto-index .foto-index-4, .contenedor-foto-index .foto-index-3, .contenedor-foto-index .foto-index-2 {
-  width: 600px;
+.contenedor-foto-index .degradados {
+  margin-bottom: 50px;
+}
+.contenedor-foto-index .foto-index-1, .contenedor-foto-index .foto-index-3, .contenedor-foto-index .foto-index-2 {
+  width: 320px;
   height: 300px;
   margin-bottom: 30px;
   border-radius: 50px;
@@ -48,9 +51,12 @@ main {
     transform: scale(1.05);
   }
 }
-.contenedor-foto-index .foto-index-1:hover, .contenedor-foto-index .foto-index-4:hover, .contenedor-foto-index .foto-index-3:hover, .contenedor-foto-index .foto-index-2:hover {
+.contenedor-foto-index .foto-index-1:hover, .contenedor-foto-index .foto-index-3:hover, .contenedor-foto-index .foto-index-2:hover {
   filter: saturate(300%);
   border: 10px solid red;
+}
+.contenedor-foto-index .text_img {
+  margin-bottom: 10px;
 }
 .contenedor-foto-index h1 {
   text-align: center;
@@ -58,13 +64,13 @@ main {
   margin-bottom: 40px;
 }
 .contenedor-foto-index h2 {
-  margin-bottom: 180px;
   text-align: center;
-  color: #FFFFFF;
+  color: #000000;
 }
 .contenedor-foto-index h3 {
   text-align: center;
   color: black;
+  margin-bottom: 150px;
 }
 .contenedor-foto-index h4 {
   margin-bottom: 200px;
@@ -202,6 +208,10 @@ main {
 }
 
 @media only screen and (min-width: 1000px) {
+  .contenedor_nav {
+    display: flex;
+    justify-content: flex-end;
+  }
   /* media de index */
   .contenedor-foto-index {
     display: flex;
@@ -209,7 +219,7 @@ main {
     flex-wrap: wrap;
     gap: 30px;
   }
-  .contenedor-foto-index .foto-index-1, .contenedor-foto-index .foto-index-2, .contenedor-foto-index .foto-index-3, .contenedor-foto-index .foto-index-4 {
+  .contenedor-foto-index .foto-index-1, .contenedor-foto-index .foto-index-2, .contenedor-foto-index .foto-index-3 {
     height: 475px;
     width: 500px;
     margin-bottom: 100px;
@@ -249,7 +259,7 @@ main {
   .parrafo-productos {
     text-align: center;
     font-size: 25px;
-    color: #C0C0C0;
+    color: #000000;
   }
   .footer-productos {
     margin-top: 336px;
@@ -262,6 +272,7 @@ main {
   .videos-1 {
     margin-left: 50px;
     margin-bottom: 100px;
+    width: 95%;
     height: 650px;
   }
   .titulo-video-2 {
@@ -271,6 +282,7 @@ main {
   .videos-2 {
     margin-left: 50px;
     margin-bottom: 100px;
+    width: 95%;
     height: 650px;
   }
   .footer-video {
@@ -283,19 +295,40 @@ header {
 
 .contenedor_logo {
   margin-bottom: 5px;
-  background: rgb(226, 226, 237);
+  background: rgb(0, 0, 0);
   box-shadow: 5px 5px 10px black;
 }
 
 .logo {
   width: 370px;
+  height: 250px;
 }
 
 .contenedor_nav {
-  display: flex;
-  justify-content: flex-end;
   box-shadow: 5px 5px 10px black;
   background: red;
+  margin-bottom: 5px;
+}
+
+li, a {
+  font-weight: 1000;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar a:hover {
+  color: rgb(0, 0, 255);
+}
+
+.titulo {
+  color: black;
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+  background: linear-gradient(to left, black, white 50%, black);
+  box-shadow: 5px 5px 10px black;
 }
 
 .contenedor-redes {
