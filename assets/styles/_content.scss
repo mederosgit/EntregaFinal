@@ -92,10 +92,6 @@ main{
     }
 }
 
-.footer-index{
-    margin-bottom: 20px;
-}
-
 // socios..........................................
 .contenedor-titulo-socios{
     text-align: center;
@@ -127,12 +123,10 @@ main{
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
-.footer-socios{
-    margin-top: 62px;
-}
-
 // catalogo.....................................
 .titulo-catalogo{
+    font-size: c.$font-size-titulo-main;
+    margin-top: 50px;
     color: c.$color-titulos;
     text-align: center;
     text-shadow: 15px 5px 15px rgb(0, 0, 0);
@@ -152,7 +146,12 @@ main{
     
 
     .carousel{
+        width: 50%;
         box-shadow: 15px 15px 20px rgb(0, 0, 0);
+    }
+
+    .videos-bengie{
+        text-align: center;
     }
 
     .titulo-video-catalogo{
@@ -162,25 +161,27 @@ main{
         text-shadow: 15px 5px 15px rgb(0, 0, 0);
     }
 
-    .video-catalogo{
-        margin-bottom: 85px;
+    .img-bengie{
+        width: 50%;
         box-shadow: 15px 15px 20px rgb(0, 0, 0);
+        margin-bottom: 90px;
     }
 
-    .parrafo-video-catalogo{
-        color: c.$color-titulos;
+    .video-catalogo{
+        box-shadow: 15px 15px 20px rgb(0, 0, 0);
+        margin-bottom: 40px;
+    }
+
+    .video-catalogo-ultimo{
+        margin-bottom: 150px;
+    }
+
+    h4{
+        margin-bottom: 30px;
         text-align: center;
+        color: c.$color-h4;
         text-shadow: 15px 5px 15px rgb(0, 0, 0);
     }
-}
-
-.img-catalogo{
-    width: 300px;
-    height: 300px;
-}
-
-.footer-catalogo{
-    margin-top: 368px;
 }
 
 // productos..........................................
@@ -196,56 +197,39 @@ main{
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
-.footer-productos{
-    margin-top: 258px;
-}
+// Nosotros.............................................
 
-// video.............................................
-
-.videos{
+.nosotros{
     display: flex;
     display: block;
     flex-wrap: wrap;
-    margin: 30px;
 
-    .titulo-video-1{
+    .titulo-nosotros{
+        font-size: c.$font-size-titulo;
         color: c.$color-titulos;
         text-align: center;
         text-shadow: 5px 5px 20px rgb(0, 0, 0);
     }
 
-    .subtitulo-video-1{
-        @extend .titulo-video-1;
-        margin-bottom: 30px;
-    }
+    .contenedor-map{
+        display: block;
 
-    .parrafo-video{
-        @extend .titulo-video-1;
-    }
+        .map{
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
-    .videos-1{
-        margin-bottom: 20px;
-        box-shadow: 15px 15px 20px rgb(0, 0, 0);
-    }
+        .texto-map{
+            font-size: 20px;
+            margin-bottom: 70px;
+        }
 
-    .titulo-video-2{
-        margin-top: 50px;
-        color: c.$color-titulos;
-        text-align: center;
-        text-shadow: 15px 15px 20px rgb(0, 0, 0);
     }
+    
 
-    .videos-2{
-        margin-bottom: 100px;
-        box-shadow: 15px 15px 20px rgb(0, 0, 0);
-    }
 }
 
-.footer-video{
-    margin-top: 287px;
-}
-
-// media Desktop.................................................
+// media Desktop..................................
 
 
 @media only screen and (min-width: 1000px) {
@@ -280,22 +264,14 @@ main{
         }
     }
 
-    .footer-index{
-        margin-top: 70px;
-    }
-
-    
     /* media de catalogo */
-    .img-catalogo, .titulo-video-catalogo, .video-catalogo{
-        display: none;
-    }
 
     .titulo-catalogo{
         text-shadow: 15px 15px 20px rgb(0, 0, 0);
     }
 
-    .footer-catalogo{
-        margin-top: 282px;
+    .video-catalogo{
+        height: 600px;
     }
 
     /* media de socios */
@@ -308,49 +284,49 @@ main{
         margin-left: 100px;
     }
 
-    .footer-socios{
-        margin-bottom: 25px;
-    }
-
     /* media de productos */
     .parrafo-productos{
         text-align: center;
         font-size: c.$font-size-redes;
         color: c.$color-h2;
     }
+
+    /* media de Nosotros */
     
-    .footer-productos{
-        margin-top:336px;
-    }
+    .nosotros{
+        display: flex;
+        display: block;
+        flex-wrap: wrap;
+    
+        .titulo-nosotros{
+            font-size: c.$font-size-titulo;
+            color: c.$color-titulos;
+            text-align: center;
+            text-shadow: 5px 5px 20px rgb(0, 0, 0);
+        }
+    
+        .contenedor-map{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom: 60px;
 
-    /* media de videos */
-    .titulo-video{
-        font-size: 50px;
-        text-shadow: 15px 15px 20px rgb(0, 0, 0);
+            .texto-map{
+            text-align: center;
+            margin-top: 5%;
+            margin-left: 30px;
+            width: 50%;
+            font-size: c.$font-size-subTitulo-main;
+            }
+    
+            .map{
+            width: 50%;
+            }
+    
+        }
+        
+    
     }
-
-    .videos-1{
-        margin-left: 50px;
-        margin-bottom: 100px;
-        width: 95%;
-        height: 650px;
-    }
-
-    .titulo-video-2{
-        font-size: 30px;
-        text-shadow: 15px 15px 20px rgb(0, 0, 0);;
-    }
-    .videos-2{
-        margin-left: 50px;
-        margin-bottom: 100px;
-        width: 95%;
-        height: 650px;;
-    }
-
-    .footer-video{
-        margin-top: 417px;
-    }
-
     
     
 }

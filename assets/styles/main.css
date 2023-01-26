@@ -75,11 +75,7 @@ main {
 .contenedor-foto-index h4 {
   margin-bottom: 200px;
   text-align: center;
-  color: black;
-}
-
-.footer-index {
-  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .contenedor-titulo-socios {
@@ -109,11 +105,9 @@ main {
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
-.footer-socios {
-  margin-top: 62px;
-}
-
 .titulo-catalogo, .subtitulo-catalogo {
+  font-size: 40px;
+  margin-top: 50px;
   color: #FFFFFF;
   text-align: center;
   text-shadow: 15px 5px 15px rgb(0, 0, 0);
@@ -131,7 +125,11 @@ main {
   margin: 20px;
 }
 .container-catalogo .carousel {
+  width: 50%;
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+.container-catalogo .videos-bengie {
+  text-align: center;
 }
 .container-catalogo .titulo-video-catalogo {
   margin-top: 70px;
@@ -139,23 +137,23 @@ main {
   text-align: center;
   text-shadow: 15px 5px 15px rgb(0, 0, 0);
 }
-.container-catalogo .video-catalogo {
-  margin-bottom: 85px;
+.container-catalogo .img-bengie {
+  width: 50%;
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
+  margin-bottom: 90px;
 }
-.container-catalogo .parrafo-video-catalogo {
-  color: #FFFFFF;
+.container-catalogo .video-catalogo {
+  box-shadow: 15px 15px 20px rgb(0, 0, 0);
+  margin-bottom: 40px;
+}
+.container-catalogo .video-catalogo-ultimo {
+  margin-bottom: 150px;
+}
+.container-catalogo h4 {
+  margin-bottom: 30px;
   text-align: center;
+  color: rgb(255, 255, 255);
   text-shadow: 15px 5px 15px rgb(0, 0, 0);
-}
-
-.img-catalogo {
-  width: 300px;
-  height: 300px;
-}
-
-.footer-catalogo {
-  margin-top: 368px;
 }
 
 .subtitulo-productos {
@@ -170,41 +168,27 @@ main {
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
-.footer-productos {
-  margin-top: 258px;
-}
-
-.videos {
+.nosotros {
   display: flex;
   display: block;
   flex-wrap: wrap;
-  margin: 30px;
 }
-.videos .titulo-video-1, .videos .parrafo-video, .videos .subtitulo-video-1 {
+.nosotros .titulo-nosotros {
+  font-size: 35px;
   color: #FFFFFF;
   text-align: center;
   text-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
-.videos .subtitulo-video-1 {
-  margin-bottom: 30px;
+.nosotros .contenedor-map {
+  display: block;
 }
-.videos .videos-1 {
+.nosotros .contenedor-map .map {
+  width: 100%;
   margin-bottom: 20px;
-  box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
-.videos .titulo-video-2 {
-  margin-top: 50px;
-  color: #FFFFFF;
-  text-align: center;
-  text-shadow: 15px 15px 20px rgb(0, 0, 0);
-}
-.videos .videos-2 {
-  margin-bottom: 100px;
-  box-shadow: 15px 15px 20px rgb(0, 0, 0);
-}
-
-.footer-video {
-  margin-top: 287px;
+.nosotros .contenedor-map .texto-map {
+  font-size: 20px;
+  margin-bottom: 70px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -231,18 +215,12 @@ main {
     margin-bottom: 100px;
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
-  .footer-index {
-    margin-top: 70px;
-  }
   /* media de catalogo */
-  .img-catalogo, .titulo-video-catalogo, .video-catalogo {
-    display: none;
-  }
   .titulo-catalogo, .subtitulo-catalogo {
     text-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
-  .footer-catalogo {
-    margin-top: 282px;
+  .video-catalogo {
+    height: 600px;
   }
   /* media de socios */
   .subtitulo-socios {
@@ -252,41 +230,39 @@ main {
   .form {
     margin-left: 100px;
   }
-  .footer-socios {
-    margin-bottom: 25px;
-  }
   /* media de productos */
   .parrafo-productos {
     text-align: center;
     font-size: 25px;
     color: #000000;
   }
-  .footer-productos {
-    margin-top: 336px;
+  /* media de Nosotros */
+  .nosotros {
+    display: flex;
+    display: block;
+    flex-wrap: wrap;
   }
-  /* media de videos */
-  .titulo-video {
-    font-size: 50px;
-    text-shadow: 15px 15px 20px rgb(0, 0, 0);
+  .nosotros .titulo-nosotros {
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: 5px 5px 20px rgb(0, 0, 0);
   }
-  .videos-1 {
-    margin-left: 50px;
-    margin-bottom: 100px;
-    width: 95%;
-    height: 650px;
+  .nosotros .contenedor-map {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 60px;
   }
-  .titulo-video-2 {
+  .nosotros .contenedor-map .texto-map {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 30px;
+    width: 50%;
     font-size: 30px;
-    text-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
-  .videos-2 {
-    margin-left: 50px;
-    margin-bottom: 100px;
-    width: 95%;
-    height: 650px;
-  }
-  .footer-video {
-    margin-top: 417px;
+  .nosotros .contenedor-map .map {
+    width: 50%;
   }
 }
 header {
@@ -324,11 +300,15 @@ li, a {
 
 .titulo {
   color: black;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 800;
   text-align: center;
   background: linear-gradient(to left, black, white 50%, black);
   box-shadow: 5px 5px 10px black;
+}
+
+footer {
+  padding-bottom: 20px;
 }
 
 .contenedor-redes {
