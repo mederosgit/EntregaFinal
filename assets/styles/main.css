@@ -5,7 +5,7 @@
 
 body {
   width: 100%;
-  background: rgb(146, 146, 146);
+  background: linear-gradient(to right, #ff0000, #000000);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -65,11 +65,11 @@ main {
 }
 .contenedor-foto-index h2 {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 .contenedor-foto-index h3 {
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
   margin-bottom: 150px;
 }
 .contenedor-foto-index h4 {
@@ -98,13 +98,14 @@ form {
   margin-bottom: 100px;
   padding-bottom: 10px;
   border: 10px solid rgb(0, 0, 0);
+  background: rgb(57, 57, 57);
 }
 
 .form-control:focus {
   box-shadow: 10px 10px 15px rgb(0, 0, 0);
   color: white;
   border: 4px solid black;
-  background-color: #8e4c00;
+  background-color: #252525;
 }
 
 .form {
@@ -253,7 +254,7 @@ thead {
   .parrafo-productos {
     text-align: center;
     font-size: 25px;
-    color: #000000;
+    color: #ffffff;
   }
   .parrafo-productos {
     margin-bottom: 110px;
@@ -335,20 +336,21 @@ header {
 }
 .contenedor_nav {
   box-shadow: 5px 5px 10px black;
-  background: red;
+  background: linear-gradient(to right, #ebebeb, #555555);
   margin-bottom: 5px;
 }
 
 li, a {
+  font-size: 20px;
   font-weight: 1000;
 }
 
 .navbar a {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .navbar a:hover {
-  color: rgb(0, 0, 255);
+  color: rgb(255, 255, 255);
 }
 
 .titulo {
