@@ -42,7 +42,13 @@ li, a{
 }
 
 .navbar a {
-    color: c.$color-enlaces;
+    color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    .navbar a {
+        color: rgb(0, 0, 0);
+    }
 }
 
 .navbar a:hover {
