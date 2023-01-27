@@ -32,7 +32,7 @@ header{
 
 .contenedor_nav{
     box-shadow: 5px 5px 10px black;
-    background: c.$background-nav;
+    background: linear-gradient(to left, black, white 1%, black);;
     margin-bottom: 5px;
 }
 
@@ -46,7 +46,7 @@ li, a{
 }
 
 .navbar a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(21, 0, 255);
 }
 
 .titulo{

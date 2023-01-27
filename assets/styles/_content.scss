@@ -137,6 +137,7 @@ form{
 }
 
 .titulo-catalogo{
+    margin-top: 30px;
     color: c.$color-titulos;
     font-size: c.$font-size-titulo-main;
     text-align: center;
@@ -229,8 +230,7 @@ thead{
     flex-wrap: wrap;
 
     .titulo-nosotros{
-        font-size: c.$font-size-titulo;
-        color: c.$color-titulos;
+        font-size: c.$font-size-titulo;        
         text-align: center;
         text-shadow: 5px 5px 20px rgb(0, 0, 0);
     }
@@ -244,6 +244,7 @@ thead{
         }
 
         .texto-map{
+            color: c.$color-titulos;
             font-size: 20px;
             margin-bottom: 70px;
         }
