@@ -105,29 +105,34 @@ main {
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
-.titulo-catalogo, .subtitulo-catalogo {
-  font-size: 40px;
-  margin-top: 50px;
+.imagen {
+  width: 100%;
+}
+
+.titulo-catalogo {
   color: #FFFFFF;
+  font-size: 40px;
   text-align: center;
-  text-shadow: 15px 5px 15px rgb(0, 0, 0);
+  text-shadow: 15px 15px 15px rgb(0, 0, 0);
 }
 
-.subtitulo-catalogo {
-  margin-top: 60px;
+.galeria {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  padding: 15px;
+  margin-bottom: 200px;
+  grid-template-columns: repeat(1, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
 }
-
-.container-catalogo {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 20px;
-}
-.container-catalogo .carousel {
-  width: 50%;
+.galeria .imagen img {
+  width: 100%;
+  border: solid 7px rgb(0, 0, 0);
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
+
 .container-catalogo .videos-bengie {
   text-align: center;
 }
@@ -216,7 +221,7 @@ main {
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
   /* media de catalogo */
-  .titulo-catalogo, .subtitulo-catalogo {
+  .titulo-catalogo {
     text-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
   .video-catalogo {
@@ -265,21 +270,51 @@ main {
     width: 50%;
   }
 }
+@media only screen and (min-width: 100px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 520px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 728px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 header {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .contenedor_logo {
   margin-bottom: 5px;
   background: rgb(0, 0, 0);
   box-shadow: 5px 5px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  width: 370px;
-  height: 250px;
+  width: 100%;
+  height: 200px;
 }
 
+@media only screen and (min-width: 550px) {
+  .contenedor_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .contenedor_nav {
   box-shadow: 5px 5px 10px black;
   background: red;
